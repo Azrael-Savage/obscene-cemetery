@@ -10,3 +10,5 @@ User Story
 * Pings gas stations on route and displays price
 * I want to sort by price & distance
 * Gas stations can be filtered either by price or distance
+* I want to be able to add additional stops to my trip
+* ability to add and remove stops to my trip using add/remove button
