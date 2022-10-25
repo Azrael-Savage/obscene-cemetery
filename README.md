@@ -1,6 +1,8 @@
 # obscene-cemetery
 Project 1 U Of U bootcamp
 
+Nathan King, Luka Perez, Austin Bennet, Satchel Weigel
+
 
 User Story
 
