@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="./css/style.css">
-        
-    </head>
-    <body>
-         <div class="header">
-            <h1>This is a header</h1>
-            <ul>
-                <nav>History/Navigation</nav>
-            </ul>
-         </div>
-            <div class="pro"> 
-                <h2>Welcome</h2>
 
-            </div>
-            <div class="description">
-                <h3>Weather & Time Search</h3>
-                City: <label id="lbl-city"></label><br/>
-            <div class="flex-containers">
-                <div class="box1">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div id="historyLine">
+        <h1>This is a header</h1>
+
+    </div>
+    <div class="pro">
+        <h2>Welcome</h2>
+
+    </div>
+    <div class="description">
+        <h3>Weather & Time Search</h3>
+        City: <label id="lbl-city"></label><br />
+        <div class="flex-containers">
+            <div class="box1">
                 <h4>Weather</h4>
-                Temprature:  <label id="lbl-temprature"></label><br/>
-                Condition:  <label id="lbl-condition"></label><br/>
-                Sunrise:  <label id="lbl-sunrise"></label><br/>
-                Sunset:  <label id="lbl-sunset"></label><br/>
+                Temprature: <label id="lbl-temprature"></label><br />
+                Condition: <label id="lbl-condition"></label><br />
+                Sunrise: <label id="lbl-sunrise"></label><br />
+                Sunset: <label id="lbl-sunset"></label><br />
 
 
-                </div>
-                <div class="box2">
+            </div>
+            <div class="box2">
                 <h3>Time and Date</h3>
-                Time: <label id="lbl-time"></label><br/>
-                Date: <label id="lbl-date"></label><br/>
-                Day:  <label id="lbl-day_of_week"></label><br/>
-                </div>                
+                Time: <label id="lbl-time"></label><br />
+                Date: <label id="lbl-date"></label><br />
+                Day: <label id="lbl-day_of_week"></label><br />
             </div>
-            <div class="search">
-                Search
-                <input id="input"></input>
-                <button id="btn">submit</button>
-            </div>
-            <div class="results">
-                Results
-             </div>
-                
-                
-             
-             <div class="footer">
-                <footer>This is a footer</footer>
-                </div>
         </div>
+        <div class="search">
+            Search
+            <input name="city" id="input" list="input-history"></input>
+            <button id="btn">submit</button>
+            <datalist id="input-history"></datalist>
 
-        
-            
-                
-    <script src="./javascript/scipt.js"></script> 
-    </body>
+        </div>
+        <div class="results">
+            Results
+        </div>
+        <div class="footer">
+            <footer>This is a footer</footer>
+        </div>
+    </div>
+</body>
+<script src="./javascript/scipt.js"></script>
 
 </html>

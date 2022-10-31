@@ -1,44 +1,44 @@
 * {
     margin: 0;
     padding: 0;
-    }
+}
 
-.header{
+.header {
     background-color: rgb(251, 255, 253);
 }
 
-h1{
+h1 {
     color: rgb(6, 6, 6);
 }
-.flex-containers{
+
+.flex-containers {
     background-color: rgba(255, 246, 234, 0.656);
 }
 
-
-.pro{
+.pro {
     color: antiquewhite;
     height: 150px;
     width: 100%;
     background-image: url(https://png.pngtree.com/background/20210706/original/pngtree-matte-texture-black-background-picture-image_274029.jpg);
 }
 
-
-
-.search{
+.search {
     display: flex;
     color: rgb(0, 0, 0);
     padding: 20px;
     background-color: rgb(211, 210, 207);
 }
-div.search{
+
+div.search {
     justify-content: center;
 }
 
-.results{
+.results {
     display: flex;
     justify-content: center;
 }
-.footer{
+
+.footer {
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
