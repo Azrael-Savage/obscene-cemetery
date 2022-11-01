@@ -1,15 +1,27 @@
 var inputEL = document.getElementById("input")
 var buttonEL = document.getElementById("btn")
+const searchHistory = new Set();
 
-buttonEL.addEventListener("click", function (e) {
+inputEL.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    sumbitSearch();
+  }
+});
+
+buttonEL.addEventListener("click", function (event) {
+  sumbitSearch();
+})
+
+function sumbitSearch() {
   var inputValue = inputEL.value
   document.getElementById('lbl-city').innerHTML = inputValue;
-  //  fetch("http://worldtimeapi.org/api/timezone/America/" + inputValue)
-  //   .then(function (response) {
-  //     return response.json()
-  //   }).then(function (response) {
-  //    console.log(response)
 
+  searchHistory.add(inputValue);
+  var historyItems = '';
+  for (const city of searchHistory) {
+    historyItems += '<option value="' + city + '" />';
+  }
+  document.getElementById('input-history').innerHTML = historyItems;
 
   const options = {
     method: 'GET',
@@ -32,13 +44,13 @@ buttonEL.addEventListener("click", function (e) {
     }
   };
 
-
   fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=' + inputValue + '&format=json&u=f', weatherOptions)
     .then(response => response.json())
     .then(response => setWeather(response))
     .catch(err => console.error(err));
-})
 
+  inputEL.value = "";
+}
 
 function setDateTime(data) {
   console.log(data)
