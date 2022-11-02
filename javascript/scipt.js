@@ -53,7 +53,6 @@ function sumbitSearch() {
 }
 
 function setDateTime(data) {
-  console.log(data)
   var hour = data.hour;
   const minute = data.minute;
   const date = data.date;
@@ -81,6 +80,5 @@ function setWeather(data) {
   document.getElementById('lbl-condition').textContent = text;
   document.getElementById('lbl-sunrise').textContent = sunrise;
   document.getElementById('lbl-sunset').textContent = sunset;
-  console.log(data);
 }
 
